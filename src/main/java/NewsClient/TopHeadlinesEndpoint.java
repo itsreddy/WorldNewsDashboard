@@ -6,7 +6,7 @@ import io.github.ccincharge.newsapi.datamodels.Article;
 import io.github.ccincharge.newsapi.requests.RequestBuilder;
 import io.github.ccincharge.newsapi.responses.ApiArticlesResponse;
 
-public class TopNewsGetter {
+public class TopHeadlinesEndpoint {
 	
 	public List<Article> getTopNewsByCountry(String countryId) throws Exception {
 		
