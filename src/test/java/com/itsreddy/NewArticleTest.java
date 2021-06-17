@@ -1,4 +1,4 @@
-package com.sb.init;
+package com.itsreddy;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,9 +6,9 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import NewsClient.TopHeadlinesEndpoint;
+import com.itsreddy.NewsClient.TopHeadlinesEndpoint;
 import io.github.ccincharge.newsapi.datamodels.Article;
-import model.NewsArticle;
+import com.itsreddy.model.NewsArticle;
 
 class NewArticleTest {
 

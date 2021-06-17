@@ -1,4 +1,4 @@
-package NewsClient;
+package com.itsreddy.NewsClient;
 
 import java.util.List;
 

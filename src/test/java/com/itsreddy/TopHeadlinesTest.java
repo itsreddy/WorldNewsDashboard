@@ -1,13 +1,12 @@
-package com.sb.init;
+package com.itsreddy;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.internal.matchers.GreaterThan;
 
-import NewsClient.TopHeadlinesEndpoint;
+import com.itsreddy.NewsClient.TopHeadlinesEndpoint;
 import io.github.ccincharge.newsapi.datamodels.Article;
 
 class TopHeadlinesTest {

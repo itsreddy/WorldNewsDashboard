@@ -1,4 +1,4 @@
-package com.sb.init;
+package com.itsreddy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
