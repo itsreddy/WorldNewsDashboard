@@ -15,8 +15,7 @@ class NewArticleTest {
 	@Test
 	void newsArticleAttributesEqualsToTest() throws Exception {
 		
-		TopHeadlinesEndpoint topHeadlinesEndpoint = new TopHeadlinesEndpoint();
-		List<Article> articles = topHeadlinesEndpoint.getTopNewsByCountry("us");
+		List<Article> articles = TopHeadlinesEndpoint.getTopNewsByCountry("us");
 		Article article = articles.get(0);
 		NewsArticle newsArticle = new NewsArticle(article);
 
@@ -33,8 +32,7 @@ class NewArticleTest {
 //	@Test
 	void newsArticleEqualsToTest() throws Exception {
 		
-		TopHeadlinesEndpoint topHeadlinesEndpoint = new TopHeadlinesEndpoint();
-		List<Article> articles = topHeadlinesEndpoint.getTopNewsByCountry("us");
+		List<Article> articles = TopHeadlinesEndpoint.getTopNewsByCountry("us");
 		Article article = articles.get(0);
 		NewsArticle newsArticle = new NewsArticle(article);
 
