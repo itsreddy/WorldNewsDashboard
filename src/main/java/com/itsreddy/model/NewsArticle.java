@@ -2,23 +2,32 @@ package com.itsreddy.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import io.github.ccincharge.newsapi.datamodels.Article;
 import io.github.ccincharge.newsapi.datamodels.Source;
 
-@Document
+@Document(collection = "laterArticles")
 public class NewsArticle extends io.github.ccincharge.newsapi.datamodels.Article {
 	
 	@Id
 	private String id;
-	
+	@Field("sourceField")
 	private Source source;
-    private String author;
-    private String title;
-    private String description;
-    private String url;
-    private String urlToImage;
-    private String publishedAt;
+	@Field("authorField")
+	private String author;
+	@Field("titleField")
+	private String title;
+	@Field("descriptionField")
+	private String description;
+	@Field("urlField")
+	private String url;
+	@Field("urlToImageField")
+	private String urlToImage;
+	@Field("publishedAtField")
+	private String publishedAt;
+	
+	public NewsArticle() {}
 	
 	public NewsArticle(Article a) {
 		this.setSource(a.source());
