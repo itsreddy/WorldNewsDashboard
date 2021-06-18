@@ -8,7 +8,9 @@ import io.github.ccincharge.newsapi.responses.ApiArticlesResponse;
 
 public class TopHeadlinesEndpoint {
 	
-	public List<Article> getTopNewsByCountry(String countryId) throws Exception {
+	private TopHeadlinesEndpoint() {}
+	
+	public static List<Article> getTopNewsByCountry(String countryId) throws Exception {
 		
 		RequestBuilder request = new RequestBuilder()
 			    .setCountry(countryId)

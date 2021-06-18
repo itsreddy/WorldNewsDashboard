@@ -31,7 +31,7 @@ public class WorldNewsServiceApplication implements CommandLineRunner{
 		if(articleRepository.findAll().isEmpty()) {
 			System.out.println("db is empty");
 			// add new articles to db
-			for (Article a : new TopHeadlinesEndpoint().getTopNewsByCountry("us")) {
+			for (Article a : TopHeadlinesEndpoint.getTopNewsByCountry("us")) {
 //				articleRepository.save(new NewsArticle(a));
 				System.out.println(new NewsArticle(a));
 			}

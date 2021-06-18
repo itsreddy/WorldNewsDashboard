@@ -13,15 +13,13 @@ class TopHeadlinesTest {
 
 	@Test
 	void getTopNewsByCountryTestNotNull() throws Exception {
-		TopHeadlinesEndpoint topHeadlinesEndpoint = new TopHeadlinesEndpoint();
-		List<Article> articles = topHeadlinesEndpoint.getTopNewsByCountry("us");
+		List<Article> articles = TopHeadlinesEndpoint.getTopNewsByCountry("us");
 		assertNotNull(articles);
 	}
 	
 	@Test
 	void getTopNewsByCountryTestNonZero() throws Exception {
-		TopHeadlinesEndpoint topHeadlinesEndpoint = new TopHeadlinesEndpoint();
-		List<Article> articles = topHeadlinesEndpoint.getTopNewsByCountry("us");
+		List<Article> articles = TopHeadlinesEndpoint.getTopNewsByCountry("us");
 		assertTrue(articles.size() > 0);
 	}
 
