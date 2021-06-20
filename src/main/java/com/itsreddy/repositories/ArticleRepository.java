@@ -2,8 +2,8 @@ package com.itsreddy.repositories;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.itsreddy.model.NewsArticle;
+import com.itsreddy.model.ArticleWrapper;
 
-public interface ArticleRepository extends MongoRepository<NewsArticle, String>{
+public interface ArticleRepository extends MongoRepository<ArticleWrapper, String>{
 
 }
