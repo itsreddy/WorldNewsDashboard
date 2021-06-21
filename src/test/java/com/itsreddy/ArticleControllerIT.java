@@ -18,10 +18,13 @@ public class ArticleControllerIT {
 
     @Autowired
     private ArticleRepository articleRepository;
+    
+    @Autowired
+    TopHeadlinesEndpoint topHeadlinesEndpoint;
 
     @Test
     public void addToRepo() throws Exception {
-    	List<Article> articles = TopHeadlinesEndpoint.getTopNewsByCountry("in");
+    	List<Article> articles = topHeadlinesEndpoint.getTopNewsByCountry("in");
 		Article article = articles.get(0);
 		ArticleWrapper newsArticle = new ArticleWrapper(article);
 

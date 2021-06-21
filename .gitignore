@@ -60,3 +60,6 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
+# local properties file
+/src/main/resources/application-local.properties

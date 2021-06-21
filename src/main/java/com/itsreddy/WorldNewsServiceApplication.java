@@ -1,13 +1,17 @@
 package com.itsreddy;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
+import com.itsreddy.NewsClient.NewsApiWrapper;
 import com.itsreddy.repositories.ArticleRepository;
 
+@ComponentScan
 @SpringBootApplication
-public class WorldNewsServiceApplication{
+public class WorldNewsServiceApplication implements CommandLineRunner{
 	
 	private final ArticleRepository articleRepository;
 	
@@ -22,6 +26,17 @@ public class WorldNewsServiceApplication{
 
 	public ArticleRepository getArticleRepository() {
 		return articleRepository;
+	}
+	
+	@Autowired
+	NewsApiWrapper news;
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		
+		System.out.println("print this " + news.getNewsApi());
+		
 	}
 
 }
