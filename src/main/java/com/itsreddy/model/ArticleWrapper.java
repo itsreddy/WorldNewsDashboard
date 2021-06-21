@@ -7,8 +7,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.itsreddy.NewsClient.TopHeadlinesEndpoint;
-
 import io.github.ccincharge.newsapi.datamodels.Article;
 import io.github.ccincharge.newsapi.datamodels.Source;
 
