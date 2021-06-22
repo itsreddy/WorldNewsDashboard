@@ -8,8 +8,7 @@ import io.github.ccincharge.newsapi.NewsApi;
 @Component
 public final class NewsApiWrapper {
 	
-	
-	public NewsApiWrapper() {}
+	private NewsApiWrapper() {}
 	
 	@Autowired
 	private String getApiString;
@@ -17,7 +16,6 @@ public final class NewsApiWrapper {
 	private NewsApi newsApi = null;
 
 	public NewsApi getNewsApi() {
-		System.out.println(getApiString);
 		if (newsApi == null) {
 			newsApi = new NewsApi(getApiString);
 		}

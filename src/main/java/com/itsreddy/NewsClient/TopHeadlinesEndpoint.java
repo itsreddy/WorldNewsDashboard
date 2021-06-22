@@ -12,7 +12,7 @@ import io.github.ccincharge.newsapi.responses.ApiArticlesResponse;
 @Component
 public class TopHeadlinesEndpoint {
 	
-	public TopHeadlinesEndpoint() {}
+	private TopHeadlinesEndpoint() {}
 	
 	@Autowired
 	private NewsApiWrapper newsApiWrapper;
