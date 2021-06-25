@@ -20,7 +20,7 @@ public class NewsArticleController {
 	@RequestMapping("news/{cid}")
 	public List<ArticleWrapper> getCNewsArticlesByCountryId(@PathVariable("cid") String countryId) throws Exception {
 		
-		return ArticleWrapper.newsArticlesListConstructor(topHeadlinesEndpoint.getTopNewsByCountry(countryId));
+		return ArticleWrapper.newsArticlesListConstructor(topHeadlinesEndpoint.getTopNewsByCountry(countryId.toLowerCase()));
 		
 	}
 }
